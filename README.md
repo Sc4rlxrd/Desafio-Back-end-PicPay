@@ -1,6 +1,8 @@
 
 link do desafio -> https://github.com/PicPay/picpay-desafio-backend
 
+site usado pra criar o mock -> https://designer.mocky.io/design
+
 ## Tecnologias utilizadas
 
 * Java 21
