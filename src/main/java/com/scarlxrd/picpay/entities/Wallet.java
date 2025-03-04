@@ -1,6 +1,7 @@
 package com.scarlxrd.picpay.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 import java.math.BigDecimal;
 
@@ -33,13 +34,11 @@ public class Wallet {
     public Wallet() {
     }
 
-    public Wallet(Long id, String fullName, String cpfCnpj, String email, String password, BigDecimal balance, WalletType walletType) {
-        this.id = id;
+    public Wallet( String fullName,  String cpfCnpj,  String email,  String password, WalletType walletType) {
         this.fullName = fullName;
         this.cpfCnpj = cpfCnpj;
         this.email = email;
         this.password = password;
-        this.balance = balance;
         this.walletType = walletType;
     }
 
